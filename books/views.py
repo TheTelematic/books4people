@@ -1,8 +1,10 @@
-from django.http import HttpResponse
-
-
 # Create your views here.
+from django.shortcuts import render
 
 
 def home(request):
-    return HttpResponse('Esta es la primera pagina :D')
+    template = 'books/home.html'
+
+    context = {}
+
+    return render(request, template, context)
