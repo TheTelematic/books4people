@@ -1,5 +1,11 @@
+@font-face {
+    font-family: ananda;
+    src: url("/static/fonts/ananda.ttf");
+}
+
 body {
     background: #94fffd url("/static/images/background.jpg");
+    font-family: ananda, "Lucida Grande", Verdana, Arial, sans-serif;
 }
 
 .main_page {
@@ -48,7 +54,8 @@ nav ul li:hover {
 section {
     float: left;
     background-color: rgba(5, 0, 255, 0.48);
-    width: 85%;
+    width: 80%;
+    margin-left: 5%;
     padding-left: 10px;
     color: rgba(255, 82, 0, 0.82);
     display: block;
