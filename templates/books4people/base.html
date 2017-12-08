@@ -14,12 +14,52 @@
 
 </head>
 <body>
-<nav>
-    Nav
-</nav>
-{% block content %}
 
-{% endblock %}
+<header>
+
+</header>
+<div class="main_page">
+    <nav>
+        <ul>
+            <li>
+                <a href="/">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="/">
+                    Books
+                </a>
+            </li>
+            <li>
+                <a href="/">
+                    Independent publishes
+                </a>
+            </li>
+            <li>
+                <a href="/">
+                    foo
+                </a>
+            </li>
+            <li>
+                <a href="/">
+                    More foo
+                </a>
+            </li>
+            <li>
+                <a href="/">
+                    Share it on internet!
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <section>
+        {% block content %}
+
+        {% endblock %}
+    </section>
+</div>
 <footer>
     Footer
 </footer>

@@ -1,3 +1,47 @@
 body {
-    background-color: #94fffd;
+    background: #94fffd url("/static/images/background.jpg");
+}
+
+.main_page {
+    color: rgba(255, 82, 0, 0.82);
+    align-content: center;
+
+    width: 85%;
+    border-radius: 5px;
+}
+
+nav {
+    width: 10%;
+    float: left;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    color: white;
+    width: 100%;
+    float: left;
+    background-color: rgba(5, 0, 255, 0.48);
+}
+
+nav ul li a {
+    color: white;
+    border-right: none;
+    width: 100%;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li:hover {
+    background-color: rgba(5, 0, 255, 0.65);
+}
+
+section {
+    float: left;
+    background-color: rgba(5, 0, 255, 0.48);
+    width: 85%;
 }
