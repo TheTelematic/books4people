@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Books4people -
+        {% block subtitle %}
+            Books
+        {% endblock %}
+    </title>
+    {% load staticfiles %}
+    <link type="text/css" rel="stylesheet" href="{% static "css/base.css" %}">
+    <link rel="icon" href="{% static "images/favicon.png" %}">
+
+</head>
+<body>
+<nav>
+    Nav
+</nav>
+{% block content %}
+
+{% endblock %}
+<footer>
+    Footer
+</footer>
+</body>
+</html>
