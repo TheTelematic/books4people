@@ -1,11 +1,12 @@
 @font-face {
-    font-family: ananda;
-    src: url("/static/fonts/ananda.ttf");
+    font-family: behindgreeneyes;
+    src: url("/static/fonts/behindgreeneyes.ttf");
 }
 
 body {
     background: #94fffd url("/static/images/background.jpg");
-    font-family: ananda, "Lucida Grande", Verdana, Arial, sans-serif;
+    font-family: behindgreeneyes, "Lucida Grande", Verdana, Arial, sans-serif;
+    font-size: larger;
 }
 
 .main_page {
@@ -26,9 +27,8 @@ nav ul li {
     color: white;
     width: 100%;
     float: left;
-    background-color: rgba(5, 0, 255, 0.48);
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
+    background-color: rgba(5, 0, 255, 0.7);
+    border-radius: 5px;
     padding: 10px;
 
 }
@@ -47,16 +47,17 @@ nav ul li a:hover {
 }
 
 nav ul li:hover {
-    background-color: rgba(5, 0, 255, 0.65);
+    background-color: rgba(5, 0, 255, 0.4);
     border-radius: 5px;
 }
 
 section {
     float: left;
-    background-color: rgba(5, 0, 255, 0.48);
+    background-color: rgba(5, 0, 255, 0.7);
     width: 80%;
     margin-left: 5%;
     padding-left: 10px;
     color: rgba(255, 82, 0, 0.82);
     display: block;
+    border-radius: 10px;
 }
