@@ -3,7 +3,7 @@ from django.contrib import admin
 
 urlpatterns = patterns('',
                        url(r'^', include('books.urls')),
-                       # url(r'^blog/', include('blog.urls')),
+                       url(r'^login/', include('accounts.urls')),
 
                        url(r'^admin/', include(admin.site.urls)),
                        )
