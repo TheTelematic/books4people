@@ -6,58 +6,54 @@
 body {
     background: #94fffd url("/static/images/background.jpg");
     font-family: behindgreeneyes, "Lucida Grande", Verdana, Arial, sans-serif;
-    font-size: larger;
+    font-size: x-large;
 }
 
-.main_page {
-    display: inline-block;
-    width: 90%;
-    margin-top: 5%;
+ul {
+    list-style-type: none;
 }
 
-nav {
-    width: 12%;
-    float: left;
-    display: block;
+ul li {
+    text-align: center;
 }
 
-
-nav ul li {
-    display: inline;
+ul li {
     color: white;
-    width: 100%;
-    float: left;
     background-color: rgba(5, 0, 255, 0.7);
     border-radius: 5px;
-    padding: 10px;
-
 }
 
-nav ul li a {
+ul li a {
     color: white;
     border-right: none;
-    width: 100%;
+    text-decoration: none;
+    color: rgba(255, 82, 0, 0.82);
+    display: block;
+}
+
+ul li a:hover {
     text-decoration: none;
     display: block;
-    color: rgba(255, 82, 0, 0.82);
 }
 
-nav ul li a:hover {
-    text-decoration: none;
-}
-
-nav ul li:hover {
+ul li:hover {
     background-color: rgba(5, 0, 255, 0.4);
     border-radius: 5px;
 }
 
 section {
-    float: left;
     background-color: rgba(5, 0, 255, 0.7);
-    width: 80%;
-    margin-left: 5%;
-    padding-left: 10px;
     color: rgba(255, 82, 0, 0.82);
-    display: block;
     border-radius: 10px;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+aside {
+    color: rgba(255, 82, 0, 0.82);
+}
+
+.left_side {
+    padding-top: 2%;
+    padding-left: 3%;
 }
