@@ -14,6 +14,8 @@ function onSignIn(googleUser) {
             $('#login_google').toggle(500);
             $('#signout').toggle(500);
             console.log('Logged in')
+
+            $('.login_box').append("<li><img src=\"" + profile.getImageUrl() + "\"> " + profile.getName() + " </li>")
         } else {
             console.log('Not logged in')
         }

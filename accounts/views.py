@@ -5,8 +5,6 @@ from google.oauth2 import id_token
 
 
 def login(request):
-    template = 'accounts/login.html'
-    extras_js = ['accounts/js/login.js', ]
 
     if request.is_ajax() and request.method == 'GET':
         print "REQUEST ACCEPTED"
