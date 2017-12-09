@@ -1,14 +1,22 @@
 <aside class="row">
     <ul class="login_box">
-        <li>
-            <a href="/login/">
-                Log In
-            </a>
+        <li id="login_google">
+            <h1>
+                Log In with Google
+            </h1>
+
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
         </li>
-        <li>
-            <a href="#">
-                Sign In
-            </a>
+        <li id="signout" hidden>
+            <a href="#" onclick="signOut();">Sign out</a>
+            <script>
+                function signOut() {
+                    var auth2 = gapi.auth2.getAuthInstance();
+                    auth2.signOut().then(function () {
+                        console.log('User signed out.');
+                    });
+                }
+            </script>
         </li>
     </ul>
 </aside>

@@ -92,3 +92,5 @@ STATICFILES_DIRS = [
 ]
 
 TEMPLATE_DIRS = (os.path.join(BASE_DIR,  'templates'),)
+
+CLIENT_ID = os.getenv('CLIENT_ID')

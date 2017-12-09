@@ -6,7 +6,17 @@
             Books
         {% endblock %}
     </title>
+    {% load staticfiles %}
+    <script src="{% static "accounts/js/login.js" %}"></script>
 
+    {% for js in extras_js %}
+        <script src="{% static js %}"></script>
+    {% endfor %}
+
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -21,7 +31,14 @@
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
 
-    {% load staticfiles %}
+
     <link type="text/css" rel="stylesheet" href="{% static "css/base.css" %}">
     <link rel="icon" href="{% static "images/favicon.png" %}">
+
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id"
+          content="1042724640464-a1kau1rjucvnsdno6pnea7329lov1kr0.apps.googleusercontent.com">
+
+
 </head>
