@@ -13,11 +13,23 @@ function onSignIn(googleUser) {
         if (data['user_authenticated']) {
             $('#login_google').toggle(500);
             $('#signout').toggle(500);
-            console.log('Logged in')
+            console.log('Logged in');
 
-            $('.login_box').append("<li><img src=\"" + profile.getImageUrl() + "\"> " + profile.getName() + " </li>")
+            $('.login_box').append("<li id=\"profile\"><img src=\"" + profile.getImageUrl() + "\"> " + profile.getName() + " </li>");
         } else {
-            console.log('Not logged in')
+            console.log('Not logged in');
         }
     });
+}
+
+function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+        console.log('User signed out.');
+    });
+
+    $('#login_google').toggle(500);
+    $('#signout').toggle(500);
+
+    $('#profile').remove()
 }
