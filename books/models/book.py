@@ -1,6 +1,6 @@
 from django.db import models
 
-from books.models.bookqueryset import BookQuerySet
+from books.models.bookmanager import BookManager
 
 
 class Book(models.Model):
@@ -11,7 +11,7 @@ class Book(models.Model):
     entered_time = models.DateTimeField(auto_now_add=True)
     deleted = models.BooleanField(default=False)
 
-    objects = BookQuerySet.as_manager()
+    objects = BookManager()
 
     def __unicode__(self):
         return "{} - {} ({})".format(self.title, self.author, self.reference)
