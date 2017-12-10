@@ -8,4 +8,4 @@ class BookAdmin(admin.ModelAdmin):
     fields = ('title', 'author', 'reference', 'edited_date')
     exclude = ('deleted',)
 
-    list_display = fields + ('deleted',)
+    list_display = ('title', 'author', 'reference')
