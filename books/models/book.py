@@ -11,7 +11,7 @@ class Book(models.Model):
     entered_time = models.DateTimeField(auto_now_add=True)
     deleted = models.BooleanField(default=False)
 
-    object = BookQuerySet.as_manager()
+    objects = BookQuerySet.as_manager()
 
     def __unicode__(self):
         return "{} - {} ({})".format(self.title, self.author, self.reference)

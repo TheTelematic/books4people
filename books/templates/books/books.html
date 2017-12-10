@@ -1,0 +1,11 @@
+{% extends "books4people/base.html" %}
+
+
+{% block content %}
+    {% for book in books %}
+        <div class="book">
+            <h1 class="book_title">{{ book.title }}</h1> - <h2 class="book_author">{{ book.author }}</h2>
+        </div>
+    {% endfor %}
+
+{% endblock %}
