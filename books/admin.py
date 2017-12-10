@@ -5,7 +5,7 @@ from books.models.book import Book
 
 @admin.register(Book)
 class BookAdmin(admin.ModelAdmin):
-    fields = ('title', 'author', 'reference')
+    fields = ('title', 'author', 'reference', 'edited_date')
     exclude = ('deleted',)
 
     list_display = fields + ('deleted',)
